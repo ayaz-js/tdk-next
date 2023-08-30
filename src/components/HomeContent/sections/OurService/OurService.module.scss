@@ -1,0 +1,228 @@
+.block {
+  padding: 80px 48px 0;
+
+  @media screen and (max-width: 1440px) {
+    padding: 80px 24px 0;
+  }
+
+  @media screen and (max-width: 834px) {
+    padding: 48px 24px 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 32px 0 0;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    color: #fff;
+    margin: 0;
+
+    @media screen and (max-width: 834px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+      line-height: 28px;
+      padding: 0 16px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px 0 0;
+
+    @media screen and (max-width: 1440px) {
+      margin: 64px 0 0;
+      gap: 64px;
+    }
+
+    @media screen and (max-width: 834px) {
+      margin: 32px 0 0;
+      gap: 32px;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin: 24px 0 0;
+      padding: 0 16px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 82px;
+    align-items: center;
+    background-color: #1d1d1d;
+
+    @media screen and (max-width: 1440px) {
+      gap: 64px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      gap: 48px;
+    }
+
+    @media screen and (max-width: 834px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column-reverse;
+      padding: 24px 0 0;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 836px;
+    width: 100%;
+    height: auto;
+
+    @media screen and (max-width: 1440px) {
+      max-width: 654px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 492px;
+    }
+
+    @media screen and (max-width: 834px) {
+      max-width: 368px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 100%;
+      margin: 24px 0 0;
+    }
+  }
+
+  &__textContainer {
+    @media screen and (max-width: 320px) {
+      padding: 0 8px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 56px;
+    margin: 0;
+    gap: 40px;
+    color: #fff;
+    max-width: 824px;
+
+    &::before {
+      content: "";
+      display: block;
+      max-width: 2px;
+      width: 100%;
+      min-height: 110px;
+      background-color: #ffbb0d;
+
+      @media screen and (max-width: 1440px) {
+        min-height: 86px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        min-height: 54px;
+      }
+
+      @media screen and (max-width: 834px) {
+        min-height: 50px;
+      }
+    }
+
+    @media screen and (max-width: 1440px) {
+      font-size: 36px;
+      line-height: 43px;
+      max-width: 576px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 378px;
+      gap: 16px;
+    }
+
+    @media screen and (max-width: 834px) {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 338px;
+      gap: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+    margin: 56px 0 0;
+    max-width: 824px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 576px;
+      margin: 40px 0 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 378px;
+      margin: 24px 0 0;
+    }
+
+    @media screen and (max-width: 834px) {
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 338px;
+    }
+  }
+
+  &__list {
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__listItem {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 576px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 378px;
+    }
+
+    @media screen and (max-width: 834px) {
+      font-size: 14px;
+      line-height: 16px;
+      max-width: 338px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

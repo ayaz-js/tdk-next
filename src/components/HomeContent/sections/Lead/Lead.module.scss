@@ -1,0 +1,43 @@
+.block {
+  background-image: url("../../../../../public/images/head-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+  display: block;
+  position: relative;
+  padding: 80px 48px 0;
+  margin-top: -124px;
+
+  @media screen and (max-width: 834px) {
+    min-height: 556px;
+    padding: 48px 24px 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    min-height: 430px;
+    padding: 48px 16px 0;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #fff;
+    margin: 80px 0 0;
+
+    @media screen and (max-width: 834px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__title_yellow {
+    color: #ffbb0d;
+  }
+}
