@@ -2,6 +2,7 @@ import {NextPage} from "next";
 import Link from "next/link";
 import {Category} from "@/models/category";
 import {getCategories} from "@/app/services/categories";
+import SubcategoryCard from "@/components/SubcategoryCard";
 
 interface PageProps {
     params: {
@@ -23,9 +24,13 @@ const Page:NextPage<PageProps> = async ({params}) => {
         return null
     }
    return (
-       <div>
-           <h1 className="text-[46px] text-white">{`${params.category}`}</h1>
-           {category.subcategories.map(({name, slug}) => <Link key={slug}  href={`/products/${category.slug}/${slug}`}><article >{name}</article></Link>)}
+       <div className="py-16">
+           <h1 className="text-[46px] text-white font-bold text-center mb-[56px]">{`${category.name}`}</h1>
+           <div className="grid grid-cols-3 gap-[40px] px-[48px]">
+               {category.subcategories.map(({name, slug, image}) => (
+                   <SubcategoryCard image={image} name={name} href={`/products/${category.slug}/${slug}`} key={slug}/>
+                  ))}
+           </div>
        </div>
    )
 };

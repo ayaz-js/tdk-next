@@ -8,15 +8,6 @@ interface PageProps {
     }
 }
 
-interface Item  {
-    name:string
-    slug:string
-}
-
-interface Subcategory extends Item {
-    category:Item
-}
-
 const getSubcategories = async (slug:string) => {
     const categories = await getCategories()
     const subcategories = categories.find(category => category.slug === slug)?.subcategories

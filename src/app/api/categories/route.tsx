@@ -8,19 +8,23 @@ export async function GET(request: Request) {
             subcategories: [
                 {
                     name:'Холодные фрезы',
-                    slug:'cold-milling-machines'
+                    slug:'cold-milling-machines',
+                    image:'/images/subcategories/subcategory_1.webp'
                 },
                 {
                     name:'Ресайклеры и стабилизаторы',
-                    slug:'recyclers-and-stabilizers'
+                    slug:'recyclers-and-stabilizers',
+                    image:'/images/subcategories/subcategory_1.webp'
                 },
                 {
                     name:'Карьерный комбайн',
-                    slug:'quarry-combine'
+                    slug:'quarry-combine',
+                    image:'/images/subcategories/subcategory_1.webp'
                 },
                 {
                     name:'Асфальтоукладчики',
-                    slug:'asphalt-pavers'
+                    slug:'asphalt-pavers',
+                    image:'/images/subcategories/subcategory_1.webp'
                 },
             ]
         }
