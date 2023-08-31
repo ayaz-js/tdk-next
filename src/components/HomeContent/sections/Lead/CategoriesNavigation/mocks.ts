@@ -1,7 +1,7 @@
 export const categoriesLink = [
   {
     text: "Дробильное оборудование",
-    link: "#",
+    link: "/products/crushing-equipment",
   },
   {
     text: "Грохота Классификаторы",
