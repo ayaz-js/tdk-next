@@ -1,9 +1,11 @@
 import { Category } from "@/models/category";
 
-export const getCategories = (): Promise<Category[]> => {
-  return fetch(`${process.env.APP_URL}/api/categories`).then((res) =>
-    res.json()
-  );
+export const getCategories = async (): Promise<Category[]> => {
+  const response = await fetch(`${process.env.APP_URL}/api/categories`);
+  if (!response.ok) {
+    throw new Error("Failed to fetch categories");
+  }
+  return response.json();
 };
 
 export const getCategory = async (
