@@ -30,6 +30,10 @@
     background: rgba(29, 29, 29, 0.85);
     padding: 18px;
     border-radius: 16px;
+
+    &:hover {
+      background: #ffbb0d;
+    }
   }
 
   &__link {
@@ -49,6 +53,14 @@
       background-repeat: no-repeat;
       width: 48px;
       height: 34px;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      &:after {
+        transform: translateX(10px);
+        background-image: url("../../../../../../public/images/arrow-right-black.svg");
+      }
     }
 
     @media screen and (max-width: 1200px) {
