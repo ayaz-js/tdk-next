@@ -5,5 +5,4 @@ export type NavLink = {
 
 export type Props = {
   navLinks: NavLink[];
-  closeMenu: () => void;
 };

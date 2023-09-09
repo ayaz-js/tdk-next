@@ -13,15 +13,6 @@
     padding: 18px 24px;
   }
 
-  &__logo {
-    display: block;
-    max-width: 440px;
-
-    @media screen and (max-width: 834px) {
-      max-width: 222px;
-    }
-  }
-
   &__list {
     display: flex;
     gap: 80px;

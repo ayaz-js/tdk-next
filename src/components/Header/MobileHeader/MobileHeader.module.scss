@@ -9,43 +9,9 @@
   z-index: 99;
   padding: 16px;
 
-  &__mobile {
-    display: block;
-    background-image: url("../../../../public/images/menu-icon.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 28px;
-    height: 14px;
-    border: none;
-    background-color: transparent;
-  }
-
   &__logo {
     display: block;
     max-width: 242px;
-  }
-
-  &__container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-
-    &_opened {
-      transform: translateX(0);
-      transition: transform 0.3s ease-in-out;
-    }
-  }
-
-  &__overlay {
-    position: absolute;
-    background-color: rgba(24 24 24 / 50%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
   }
 
   &__nav {
