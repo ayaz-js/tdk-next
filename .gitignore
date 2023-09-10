@@ -19,7 +19,7 @@
 .DS_Store
 .idea
 *.pem
-yarn.locks
+yarn.lock
 package-lock.json
 
 # debug
