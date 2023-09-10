@@ -19,6 +19,7 @@ const SubcategoryCard: FC<Props> = ({ image, name, href }) => {
             alt={`Изображение ${name}`}
             width={580}
             height={282}
+            className="w-full"
           />
         </figure>
         <div className="card-body gap-[24px] justify-between pb-[40px]">
