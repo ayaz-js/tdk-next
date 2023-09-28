@@ -12,7 +12,7 @@ interface Props {
 const SubcategoryCard: FC<Props> = ({ image, name, href }) => {
   return (
     <Link href={href}>
-      <div className="card w-full bg-[#232323] shadow-xl hover:bg-[#303030] [&>figure>img]:hover:scale-[103%] [&>figure>img]:transition [&>figure>img]:duration-200">
+      <div className="card w-full lg:min-h-[465px] bg-[#232323] shadow-xl hover:bg-[#303030] [&>figure>img]:hover:scale-[103%] [&>figure>img]:transition [&>figure>img]:duration-200">
         <figure className="rounded-2xl">
           <Image
             src={image}

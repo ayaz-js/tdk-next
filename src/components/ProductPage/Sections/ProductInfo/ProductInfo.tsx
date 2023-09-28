@@ -5,7 +5,10 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import { productImages } from "@/components/ProductPage/mocks";
+import {
+  productImages,
+  productShortInfo,
+} from "@/components/ProductPage/mocks";
 import Image from "next/image";
 
 export const ProductInfo: FC = () => {
@@ -59,18 +62,15 @@ export const ProductInfo: FC = () => {
         <h1 className="text-5xl font-bold mt-3">4200 SMi Hartgestein</h1>
         <div className="divider"></div>
         <ul>
-          <li className="text-xl font-normal mt-4">
-            Ширина срезания макс. {"- "}
-            <span className="text-xl font-semibold">4200 мм</span>
-          </li>
-          <li className="text-xl font-normal mt-4">
-            Ширина срезания макс. {"- "}
-            <span className="text-xl font-semibold">4200 мм</span>
-          </li>
-          <li className="text-xl font-normal mt-4">
-            Ширина срезания макс. {"- "}
-            <span className="text-xl font-semibold">4200 мм</span>
-          </li>
+          {productShortInfo.map((item) => (
+            <li
+              className="text-xl font-normal mt-4 before:inline-block before:mr-4 before:w-1.5 before:h-1.5 before:rounded-[50%] before:bg-[#ffbb0d]"
+              key={item.name}
+            >
+              {item.name}
+              <span className="text-xl font-semibold">{item.value}</span>
+            </li>
+          ))}
         </ul>
         <p className="text-xl font-normal mt-8">
           Установки данного типа впечатляют высокой долей асфальтогранулята,

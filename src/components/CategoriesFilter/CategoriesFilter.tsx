@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Category } from "@/models/category";
-import CategoriesFilterItem from "@/components/CategoriesFilter/CategoriesFilterItem";
+import CategoriesFilterItem from "./CategoriesFilterItem";
 
 interface Props {
   categories: Category[];
