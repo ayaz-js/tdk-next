@@ -15,7 +15,7 @@ export const ProductInfo: FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section className="grid grid-cols-2 gap-16 mt-8">
+    <section className="grid grid-cols-2 gap-16 mt-8 max-[576px]:grid-cols-1">
       <div className="w-full">
         <Swiper
           spaceBetween={10}
@@ -58,21 +58,27 @@ export const ProductInfo: FC = () => {
         </Swiper>
       </div>
       <div className="w-full">
-        <p className="text-2xl opacity-50">Холодные фрезы</p>
-        <h1 className="text-5xl font-bold mt-3">4200 SMi Hartgestein</h1>
+        <p className="text-2xl opacity-50 max-[1024px]:text-xs">
+          Холодные фрезы
+        </p>
+        <h1 className="text-5xl font-bold mt-3 max-[1024px]:text-xl">
+          4200 SMi Hartgestein
+        </h1>
         <div className="divider"></div>
         <ul>
           {productShortInfo.map((item) => (
             <li
-              className="text-xl font-normal mt-4 before:inline-block before:mr-4 before:w-1.5 before:h-1.5 before:rounded-[50%] before:bg-[#ffbb0d]"
+              className="text-xl font-normal mt-4 before:inline-block before:mr-4 before:w-1.5 before:h-1.5 before:rounded-[50%] before:bg-[#ffbb0d] max-[1024px]:text-xs"
               key={item.name}
             >
               {item.name}
-              <span className="text-xl font-semibold">{item.value}</span>
+              <span className="text-xl font-semibold max-[1024px]:text-xs">
+                {item.value}
+              </span>
             </li>
           ))}
         </ul>
-        <p className="text-xl font-normal mt-8">
+        <p className="text-xl font-normal mt-8 max-[1024px]:text-sm max-[1024px]:mt-4">
           Установки данного типа впечатляют высокой долей асфальтогранулята,
           равной более 90%, при одновременном соблюдении пределов нормы
           выбросов.

@@ -6,7 +6,7 @@ import { ProductDescription } from "./Sections/ProductDescription";
 
 export const ProductPage: FC = () => {
   return (
-    <div className="px-14 pb-[100px]">
+    <div className="px-14 pb-[100px] max-[1024px]:px-6">
       <Breadcrumbs />
       <ProductInfo />
       <ProductDescription />

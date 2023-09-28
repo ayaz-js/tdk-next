@@ -9,7 +9,7 @@
   backdrop-filter: blur(6px);
   z-index: 99;
 
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 1024px) {
     padding: 18px 24px;
   }
 
@@ -37,7 +37,7 @@
       color: #ffbb0d;
     }
 
-    @media screen and (max-width: 834px) {
+    @media screen and (max-width: 1024px) {
       font-size: 16px;
       line-height: 18px;
     }
