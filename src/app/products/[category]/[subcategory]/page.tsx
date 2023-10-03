@@ -50,12 +50,15 @@ const Page: NextPage<PageProps> = async ({ params }) => {
 
   return (
     <div className="py-[64px] flex px-[48px] gap-[48px]">
-      <div id="products" className="w-full grid grid-cols-3 gap-[32px]">
+      <div
+        id="products"
+        className="w-full grid grid-cols-3 gap-[32px] max-[1024px]:grid-cols-2"
+      >
         {items.map((item, index) => (
           <ProductCard key={index} {...item} />
         ))}
       </div>
-      <div id="faq" className="min-w-[425px]">
+      <div id="faq" className="min-w-[425px] max-[1024px]:min-w-[250px]">
         <CategoriesFilter
           categories={categories}
           selectedCategory={category}

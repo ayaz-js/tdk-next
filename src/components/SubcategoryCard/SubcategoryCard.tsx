@@ -23,7 +23,9 @@ const SubcategoryCard: FC<Props> = ({ image, name, href }) => {
           />
         </figure>
         <div className="card-body gap-[24px] justify-between pb-[40px]">
-          <h2 className="text-center text-white text-[26px]">{name}</h2>
+          <h2 className="text-center text-white text-[26px] max-[1024px]:text-lg">
+            {name}
+          </h2>
           <div className="card-actions justify-center">
             <Button>Перейти к продуктам</Button>
           </div>

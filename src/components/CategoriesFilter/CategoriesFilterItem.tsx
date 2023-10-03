@@ -24,7 +24,7 @@ const CategoriesFilterItem: FC<Props> = ({
 
   const collapseClass = isSelectedCategory
     ? "collapse collapse-arrow bg-[#1D1D1DD9] px-[32px]"
-    : "collapse collapse-arrow hover:bg-[#232323] bg-[#1D1D1DD9]  px-[32px]";
+    : "collapse collapse-arrow hover:bg-[#232323] bg-[#1D1D1DD9] px-[32px]";
   return (
     <div className={collapseClass}>
       <input
@@ -32,14 +32,14 @@ const CategoriesFilterItem: FC<Props> = ({
         name={`category-collapse-${id}`}
         defaultChecked={isSelectedCategory}
       />
-      <div className="collapse-title font-bold after:scale-x-150 after:right-0 after:scale-y-150 after:text-brand-yellow text-[20px] px-0">
+      <div className="collapse-title font-bold after:scale-x-150 after:right-0 after:scale-y-150 after:text-brand-yellow text-[20px] px-0 max-[1024px]:text-[16px]">
         {name}
       </div>
-      <div className="collapse-content text-[18px]">
-        <ul>
+      <div className="collapse-content text-[18px] max-[1024px]:text-[16px]">
+        <ul className="flex flex-col gap-6">
           {subcategories.map((subcategory, index) => (
             <Link href={`/products/${slug}/${subcategory.slug}`} key={index}>
-              <li className={getLiClass(slug, subcategory.slug)}>
+              <li className={`${getLiClass(slug, subcategory.slug)}`}>
                 {subcategory.name}
               </li>
             </Link>
