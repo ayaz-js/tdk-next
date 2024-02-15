@@ -9,7 +9,7 @@ export const Lead = () => {
         <span className={styles.block__title_yellow}>Everything</span> you needs
       </h1>
 
-      <CategoriesNavigation />
+      {/*<CategoriesNavigation />*/}
     </section>
   );
 };
